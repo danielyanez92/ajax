@@ -1,0 +1,11 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ghjMTxIMbuA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<button type="button" name="button" id="button">Comentar</button>
+<input type="text" name="" value="" id="texto">
+<h1>la gente loleein</h1>
+<ul id="comentarios">
+  <% @comments.each do |comment| %>
+  <li>
+    <%= comment.content %>
+  </li>
+  <% end %>
+</ul>
